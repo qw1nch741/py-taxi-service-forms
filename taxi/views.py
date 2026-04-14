@@ -57,16 +57,12 @@ class DriverDetailView(LoginRequiredMixin, generic.DetailView):
 
 
 class CarForm(forms.ModelForm):
-    success_url = reverse_lazy("taxi:car-list")
-
     class Meta:
         model = Car
         fields = "__all__"
 
 
 class ManufacturerForm(forms.ModelForm):
-    success_url = reverse_lazy("taxi:manufacturer-list")
-
     class Meta:
         model = Manufacturer
         fields = "__all__"
