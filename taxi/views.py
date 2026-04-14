@@ -108,4 +108,3 @@ class ManufacturerDelete(LoginRequiredMixin, generic.DeleteView):
     model = Manufacturer
     success_url = reverse_lazy("taxi:manufacturer-list")
     template_name = "taxi/manufacturer-form-delete.html"
-
